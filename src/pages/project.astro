@@ -1,0 +1,55 @@
+---
+import PageLayout from "@/layouts/Base";
+import { Image } from "@astrojs/image/components";
+import ProjectImg from "../assets/Project.jpg";
+import PodcastImg from "../assets/Copertina Podcast MichaelOnTech.jpg";
+
+const meta = {
+	title: "Project",
+	description: "I Miei Progetti",
+};
+---
+
+<PageLayout meta={meta}>
+	<div class="space-y-6">
+		<h1 class="title">Project</h1>
+		<p>Ecco su cosa sto lavorando.</p>
+		<div class="flex justify-center">
+			<Image src={ProjectImg} alt="Project Image" />
+		</div>
+		<p>MichaelOnTech Podcast</p>
+		<div class="space-y-6">
+			<Image src={PodcastImg} alt="Copertina Podcast MichaelOnTech" />
+		</div>
+		<p>
+			Ascolta il Podcast su
+			<a
+				class="inline-block cactus-link"
+				href="https://podcasts.apple.com/it/podcast/michaelontech/id1621247544"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="github repository"
+			>
+				Apple Podcast
+			</a>,
+			<a
+				class="inline-block cactus-link"
+				href="https://music.amazon.it/podcasts/213000c1-8d6c-4931-93f0-65b88458612d/michaelontech"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="github repository"
+			>
+				Amazon Music
+			</a> e
+			<a
+				class="inline-block cactus-link"
+				href="https://open.spotify.com/show/0De13NpYsE26FLUvvoAGSx"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="github repository"
+			>
+				Spotify
+			</a>
+		</p>
+	</div>
+</PageLayout>
