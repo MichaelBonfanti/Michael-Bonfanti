@@ -1,6 +1,6 @@
 const siteMeta = {
-  title: "Astro Theme Cactus",
-  description: "An opinionated starter theme for Astro",
+  title: "Michael Bonfanti",
+  description: "Il Mio Sito Web",
   lang: "en-GB",
   ogLocale: "en_GB",
   githubUrl: "https://github.com/chrismwilliams/astro-theme-cactus",
